@@ -257,10 +257,3 @@ exports.ipToInt = function ipToInt(ip) {
     }
     return s[0] * 16777216 + s[1] * 65536 + s[2] * 256 + s[3];
 };
-/**
- * 将字符串分割成数组
- */
-export.strToArray=function (str){
-    var reAstral = /[\uD800-\uDBFF][\uDC00-\uDFFF]/g;
-    return str.match(reAstral);
-}
